@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  mongo:
+    image: mongo:6.0
+    restart: always
+    ports:
+      - 27018:27017
+    volumes:
+      - mongo-data:/data/db
+
+  web:
+    build: .
+    restart: always
+    ports:
+      - 5000:5000
+    environment:
+      - MONGO_URI=mongodb://mongo:27017/userdb
+      - FLASK_ENV=development
+    depends_on:
+      - mongo
+
+volumes:
+  mongo-data:
