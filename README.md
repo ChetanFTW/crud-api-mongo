@@ -3,10 +3,9 @@
 Check if MongoDB is running locally on your machine and stop it
 On Linux/macOS:
 
-
 sudo systemctl stop mongod
-or
 
+or
 
 ps aux | grep mongod
 
