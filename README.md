@@ -19,8 +19,6 @@ docker-compose up --build
 
  -->
 
-
-
 # Flask Application for CRUD operations on MongoDB
 
 
@@ -39,7 +37,6 @@ A simple Flask REST API with MongoDB for basic CRUD operations on users.
 sudo systemctl stop mongod
 # or alternatively
 ps aux | grep mongod
-
 ```
 
 ## Setup & Run
@@ -78,12 +75,10 @@ Create a user:
 curl -X POST http://localhost:5000/users \
      -H "Content-Type: application/json" \
      -d '{"name": "John Doe", "email": "john@example.com", "password": "secret123"}'
-
 ```
 Get all users:
 ```bash
 curl -X GET http://localhost:5000/users
-
 ```
 Update a User (PUT)
 Replace <id> with the actual user ID:
@@ -97,7 +92,6 @@ Delete a User (DELETE)
 Replace <id> with the actual user ID:
 ```bash
 curl -X DELETE http://localhost:5000/users/<id>
-
 ```
 
 
