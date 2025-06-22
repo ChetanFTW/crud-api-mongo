@@ -19,6 +19,7 @@ docker-compose up --build
 
  -->
 
+
 # Flask Application for CRUD operations on MongoDB
 
 
@@ -38,6 +39,7 @@ sudo systemctl stop mongod
 # or alternatively
 ps aux | grep mongod
 ```
+
 
 ## Setup & Run
 Clone the repository:
