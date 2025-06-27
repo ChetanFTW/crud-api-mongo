@@ -1,5 +1,6 @@
 version: '3.8'
 
+# Mongodb for operation
 services:
   mongo:
     image: mongo:6.0
@@ -8,7 +9,7 @@ services:
       - 27018:27017
     volumes:
       - mongo-data:/data/db
-
+# Build for website
   web:
     build: .
     restart: always
