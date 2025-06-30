@@ -37,7 +37,9 @@ A simple Flask REST API with MongoDB for basic CRUD operations on users.
 
 ```bash
 sudo systemctl stop mongod
+
 # or alternatively
+
 ps aux | grep mongod
 ```
 
